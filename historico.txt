@@ -1,0 +1,2 @@
+2026-05-15T18:38:45.387614200 -       | Nome: Ps5 | ID: 6 | Valor: R$3000.0 | Quantidade: 3
+2026-05-15T19:28:21.647357900 -       | Nome: Ps5 | ID: 7 | Valor: R$5000.0 | Quantidade: 3
