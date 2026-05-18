@@ -81,7 +81,7 @@ public class Gerente {
     }
     public void excluirProduto(ArrayList<Produto> lista, Scanner leia) {
         boolean removido = false;
-        System.out.print("Digite o ID do produto que deseja excluir: ");
+        System.out.print("\nDigite o ID do produto que deseja excluir: ");
         int id = leia.nextInt();
         for (int i = 0; i < lista.size(); i++) {
             if (lista.get(i).getId() == id) {

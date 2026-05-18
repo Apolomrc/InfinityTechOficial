@@ -121,10 +121,10 @@ public class StartNow {
                     boolean continuar = true;
                     while (continuar) {
 
-                        System.out.println("\n1 - Adicionar produto");
-                        System.out.println("2 - Listar produtos");
-                        System.out.println("3 - Venda");
-                        System.out.println("4 - Voltar");
+                        System.out.println("\n01 - Adicionar produto");
+                        System.out.println("02 - Listar produtos");
+                        System.out.println("03 - Venda");
+                        System.out.println("04 - Voltar");
                         System.out.print("\n  Digite a opção: ");
 
                         if (leia.hasNextInt()) {
@@ -210,12 +210,12 @@ public class StartNow {
                     boolean contin = true;
 
                     while (contin) {
-                        System.out.println("\n1 - Cadastrar produto ");
-                        System.out.println("2 - Alterar produto");
-                        System.out.println("3 - Excluir produtos");
-                        System.out.println("4 - Relátorio vendas");
-                        System.out.println("5 - Relátorio de produtos");
-                        System.out.println("6 - Voltar");
+                        System.out.println("\n01 - Cadastrar produto ");
+                        System.out.println("02 - Alterar produto");
+                        System.out.println("03 - Excluir produtos");
+                        System.out.println("04 - Relátorio vendas");
+                        System.out.println("05 - Relátorio de produtos");
+                        System.out.println("06 - Voltar");
 
                         int escolha01;
 

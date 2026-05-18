@@ -195,7 +195,7 @@ public class Venda implements Serializable{
                         double valor = leia.nextDouble();
 
                         if (valor < valorAtual) {
-                            System.out.printf("\nValor insuficiente está faltando R$%.2fn", (valorAtual - valor));
+                            System.out.printf("\nValor insuficiente está faltando R$%.2f", (valorAtual - valor));
 
                         } else {
                             if (valor > valorAtual) {
@@ -207,15 +207,21 @@ public class Venda implements Serializable{
                     } else if (pagamento == 2) {
 
                         int opcao;
+                        boolean controlePagamento = true;
 
                         while (true) {
-                            System.out.println("Digite 01 - Débito\nDigite 02 - Crédito");
+                            System.out.println("\nDigite 01 - Débito\nDigite 02 - Crédito");
                             System.out.print("\nEscola a opção:");
                             opcao = leia.nextInt();
-                            if (opcao == 1 || opcao == 2)
+                            if (opcao == 2) {
+                               controlePagamento = true;
                                 break;
+                            }else if(opcao == 1){
+                                controlePagamento = false;
+                                break;
+                            }
                         }
-                        while (true) {
+                        while (controlePagamento) {
                             if (valorAtual >= 100) {
                                 System.out.println("\nDeseja parcela?");
                                 System.out.println("\nDigite 01 - Sim");
