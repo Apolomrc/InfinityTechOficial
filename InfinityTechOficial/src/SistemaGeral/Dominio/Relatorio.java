@@ -29,7 +29,6 @@ public class Relatorio {
             BufferedReader reader = new BufferedReader(new FileReader("historico.txt"));
             String linha;
 
-            System.out.println("\n===== HISTÓRICO DE VENDAS =====");
 
             while ((linha = reader.readLine()) != null) {
                 if (linha.contains("Venda")) {
@@ -67,7 +66,11 @@ public class Relatorio {
         }
 
         for (String historico : relatorioHistorico) {
-            String dados = historico.substring(historico.indexOf("Produto"));
+            int index = historico.indexOf("Produto");
+            if(index == -1){
+                continue;
+            }
+            String dados= historico.substring(index);
             String[] partes = dados.split("\\|");
             System.out.println("-----------------------------");
             for (String parte : partes) {
