@@ -3,6 +3,8 @@ import java.util.ArrayList;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Scanner;
 
 public class Relatorio {
 
@@ -65,13 +67,9 @@ public class Relatorio {
         }
 
         for (String historico : relatorioHistorico) {
-
             String dados = historico.substring(historico.indexOf("Produto"));
-
             String[] partes = dados.split("\\|");
-
             System.out.println("-----------------------------");
-
             for (String parte : partes) {
                 System.out.println(parte.trim());
             }

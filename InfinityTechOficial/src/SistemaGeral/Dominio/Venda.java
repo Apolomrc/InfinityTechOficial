@@ -49,9 +49,6 @@ public class Venda implements Serializable{
         }
     }
 
-
-
-
     public void vendaProduto(ArrayList<Produto> lista, ArrayList<Venda> relatorioVendas, ArrayList<Cliente> clientes) {
         Scanner leia = new Scanner(System.in);
 
