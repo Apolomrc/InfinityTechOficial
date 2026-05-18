@@ -50,14 +50,17 @@ public class StartNow {
 
 
         while (sistema) {
-            System.out.println("============================================================================");
-            System.out.println("                              INFINITY TECH");
-            System.out.println("============================================================================");
-            System.out.println("\n01 - Funcionário ");
+            System.out.println("\n╔════════════════════════════════════════════════════════════════════════╗");
+            System.out.println("║                                                                        ║");
+            System.out.println("║                             INFINITY TECH                              ║");
+            System.out.println("║                                                                        ║");
+            System.out.println("╚════════════════════════════════════════════════════════════════════════╝\n");
+            System.out.println("\n01 - Funcionário");
             System.out.println("02 - Gerente");
             System.out.println("03 - Sair");
 
-            System.out.print("\nDigite a opção: ");
+
+            System.out.print("\n  Digite a opção: ");
             if (leia.hasNextInt()) {
                 quemEvoce = leia.nextInt();
                 leia.nextLine();
@@ -92,7 +95,7 @@ public class StartNow {
                                 System.out.println("\n01 - Tentar novamente");
                                 System.out.println("02 - Voltar menu principal");
 
-                                System.out.print("\nDigite a opção: ");
+                                System.out.print("\n  Digite a opção: ");
                                 int opcao00 = 0;
 
                                 if (leia.hasNextInt()) {
@@ -122,7 +125,7 @@ public class StartNow {
                         System.out.println("2 - Listar produtos");
                         System.out.println("3 - Venda");
                         System.out.println("4 - Voltar");
-                        System.out.print("\nDigite a escolha: ");
+                        System.out.print("\n  Digite a opção: ");
 
                         if (leia.hasNextInt()) {
                             escolha = leia.nextInt();
@@ -181,7 +184,7 @@ public class StartNow {
                                 System.out.println("\n01 - Tentar novamente");
                                 System.out.println("02 - Voltar menu principal");
 
-                                System.out.print("\nDigite a opção: ");
+                                System.out.print("\n  Digite a opção: ");
                                 int opcao01 = 0;
 
                                 if (leia.hasNextInt()) {
@@ -216,7 +219,7 @@ public class StartNow {
 
                         int escolha01;
 
-                        System.out.print("\nDigite a opção: ");
+                        System.out.print("\n  Digite a opção: ");
                         if (leia.hasNextInt()) {
                             escolha01 = leia.nextInt();
                         } else {
@@ -242,7 +245,7 @@ public class StartNow {
 
                             case 4:
                                 Relatorio relatorio = new Relatorio();
-                                relatorio.imprimeRelatorio(relatorioVendas);
+                                relatorio.imprimeRelatorio(relatorioVendas, leia);
                                 break;
                             case 5:
                                 Relatorio relatorioProdutos = new Relatorio();
