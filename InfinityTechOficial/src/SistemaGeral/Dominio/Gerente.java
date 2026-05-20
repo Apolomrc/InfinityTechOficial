@@ -5,45 +5,62 @@ import java.util.Scanner;
 public class Gerente {
     public void alterarProduto(ArrayList<Produto> lista, Scanner leia) {
         boolean removido = false;
-        System.out.print("Digite o ID do produto que deseja alterar: ");
-        int id = leia.nextInt();
-        leia.nextLine();
-
+        boolean soNumeros = false;
         Produto produtoEncontrado = null;
-        for (Produto produto : lista) {
-            if (produto.getId() == id) {
-                produtoEncontrado = produto;
+        while (true) {
+
+            System.out.print("Digite o ID do produto que deseja alterar: ");
+            String id = leia.nextLine();
+            soNumeros = true;
+            for (char c : id.toCharArray()) {
+                if (!Character.isDigit(c)) {
+                    soNumeros = false;
+                    break;
+                }
+            }
+
+            if (id.length() == 0 || !soNumeros) {
+                System.out.println("Digite apenas números!");
+                continue;
+            }
+            int idInt = Integer.parseInt(id);
+            for (Produto produto : lista) {
+                if (produto.getId() == idInt) {
+                    produtoEncontrado = produto;
+                    break;
+                }
+            }
+
+            if (produtoEncontrado == null) {
+                System.out.println("Produto não encontrado");
+                continue;
+            } else {
                 break;
             }
-        }
-        if (produtoEncontrado == null) {
-            System.out.println("Produto não cadastrado");
-            return;
         }
         while (true) {
             System.out.print("Novo nome: ");
             String nvnome = leia.nextLine();
-
-            boolean temn = false;
+            boolean temn = true;
             for (Character c : nvnome.toCharArray()) {
-                if (Character.isDigit(c)) {
+                if (!Character.isDigit(c)) {
                     temn = false;
                     break;
                 }
             }
             if (nvnome.length() == 0) {
-                System.out.println("Nome inválido");
-            } else if (temn) {
                 System.out.println("Nome não pode ser vázio");
+            } else if (temn) {
+                System.out.println("Nome inválido");
             } else {
                 produtoEncontrado.setNome(nvnome);
                 break;
             }
         }
-        String nvvalor;
+
         while (true) {
             System.out.print("Novo valor: ");
-            nvvalor = leia.nextLine();
+            String nvvalor = leia.nextLine();
             boolean teml2 = false;
             for (char c : nvvalor.toCharArray()) {
                 if (!Character.isDigit(c)) {
@@ -53,6 +70,9 @@ public class Gerente {
             }
             if (nvvalor.length() == 0 || teml2) {
                 System.out.println("Digite apenas números");
+
+            } else if (Double.parseDouble(nvvalor) <= 100) {
+                System.out.println("Valor tem que ser maior que 100");
             } else {
                 produtoEncontrado.setValor(Double.parseDouble(nvvalor));
                 break;
@@ -69,7 +89,7 @@ public class Gerente {
                 }
             }
             if (input.length() == 0 || teml) {
-                System.out.println("Digite apenas números");
+                System.out.println("Campo não pode ficar vázio");
             } else {
                 int quantidadenova = Integer.parseInt(input);
                 produtoEncontrado.setQuantidade(produtoEncontrado.getQuantidade() + quantidadenova);
@@ -95,4 +115,3 @@ public class Gerente {
 
     }
 }
-
