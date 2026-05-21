@@ -6,3 +6,9 @@
 2026-05-20T19:34:50.106149 -       | Nome: l | ID: 10 | Valor: R$101.0 | Quantidade: 3
 2026-05-20T21:15:21.276842100 -       | Nome: l | ID: 11 | Valor: R$1001.0 | Quantidade: 1
 2026-05-20T21:15:48.944577200 -       | Nome: l | ID: 12 | Valor: R$101.0 | Quantidade: 1
+2026-05-21T17:45:52.161703900 -       | Nome: Ps5 Fat | ID: 1 | Valor: R$4000.0 | Quantidade: 132
+2026-05-21T17:46:27.414131900 -       | Nome: Xbox Series S | ID: 2 | Valor: R$2500.0 | Quantidade: 70
+2026-05-21T17:46:42.938705500 -       | Nome: S25 ULTRA | ID: 3 | Valor: R$6700.0 | Quantidade: 300
+2026-05-21T17:47:22.340855500 -       | Nome: ' | ID: 4 | Valor: R$30000.0 | Quantidade: 3
+2026-05-21T17:47:47.832051 -       | Nome: PC GAMER I5400F | ID: 5 | Valor: R$3400.0 | Quantidade: 15
+2026-05-21T17:48:22.749271700 -       | Nome: MONITOR 24 POL. | ID: 6 | Valor: R$650.0 | Quantidade: 56

@@ -147,7 +147,7 @@ public class Venda implements Serializable {
                             quantidade = leia.nextInt();
 
                             if (produtoEncontrado.getQuantidade() <= 0) {
-                                System.out.println("Estoque zerado");
+                                System.out.println("⚠ Estoque zerado");
                                 return;
 
                             } else if (quantidade <= 0) {

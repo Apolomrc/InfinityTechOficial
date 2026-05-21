@@ -99,6 +99,7 @@ public class Gerente {
         }
 
     }
+
     public void excluirProduto(ArrayList<Produto> lista, Scanner leia) {
         boolean removido = false;
         System.out.print("\nDigite o ID do produto que deseja excluir: ");
@@ -114,4 +115,5 @@ public class Gerente {
         }
 
     }
+
 }
