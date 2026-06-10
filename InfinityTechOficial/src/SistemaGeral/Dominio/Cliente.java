@@ -40,7 +40,6 @@ public class Cliente implements Serializable {
         try (ObjectInputStream ois = new ObjectInputStream(
                 new FileInputStream("clientes.dat"))) {
             ArrayList<Cliente> clientes = (ArrayList<Cliente>) ois.readObject();
-            System.out.println(clientes.size() + " cliente(s) carregado(s).");
             return clientes;
         } catch (IOException | ClassNotFoundException e) {
             System.out.println("Erro ao carregar clientes: " + e.getMessage());
