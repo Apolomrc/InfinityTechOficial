@@ -100,4 +100,4 @@ Protótipo desenvolvido no Figma:
 
 ## 👨‍💻 Autor
 
-Desenvolvido por * Apolo Marcus, Arthur Ongaro, Gustavo Paulo e Kauã Ribeiro*
+Desenvolvido por: Apolo Marcus, Arthur Ongaro, Gustavo Paulo e Kauã Ribeiro.
