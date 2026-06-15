@@ -92,6 +92,12 @@ Os dados são salvos automaticamente ao fechar o sistema e carregados ao iniciar
 
 ---
 
+## 🎨 Interface
+Protótipo desenvolvido no Figma:  
+[🔗 Ver protótipo completo](https://www.figma.com/design/IHWKR2I0ToZxkiCWjfyFJx/PROJETO-DE-UX-UI)
+
+---
+
 ## 👨‍💻 Autor
 
-Desenvolvido por *Arthur Ongaro, Apolo Marcos, Gustavo Paulo e Kauã Ribeiro*
+Desenvolvido por * Apolo Marcus, Arthur Ongaro, Gustavo Paulo e Kauã Ribeiro*
